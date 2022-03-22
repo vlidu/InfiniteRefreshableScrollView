@@ -11,9 +11,7 @@ extension View {
         self.modifier(OnListRefreshModifier(onValueChanged: onValueChanged))
     }
     
-    // To use with async await methods, is excluded from iOS 15 apple made their own
-    @available(iOS, obsoleted: 15)
-    func refreshable(action: @escaping @Sendable () async -> Void) -> some View {
+    func onRefresh(action: @escaping @Sendable () async -> Void) -> some View {
         self.modifier(RefreshableModifier(action: action))
     }
 }
