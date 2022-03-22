@@ -6,7 +6,7 @@
 
 import SwiftUI
 
-extension View {
+public extension View {
     func onRefresh(onValueChanged: @escaping UIScrollView.ValueChangedAction) -> some View {
         self.modifier(OnListRefreshModifier(onValueChanged: onValueChanged))
     }

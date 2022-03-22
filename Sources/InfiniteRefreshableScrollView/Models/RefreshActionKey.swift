@@ -6,6 +6,6 @@
 
 import SwiftUI
 
-struct RefreshActionKey: EnvironmentKey {
-    static let defaultValue: RefreshAction? = nil
+public struct RefreshActionKey: EnvironmentKey {
+    public static let defaultValue: RefreshAction? = nil
 }

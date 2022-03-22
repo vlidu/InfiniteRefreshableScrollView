@@ -7,10 +7,10 @@
 import SwiftUI
 import Introspect
 
-struct OnListRefreshModifier: ViewModifier {
+public struct OnListRefreshModifier: ViewModifier {
     let onValueChanged: UIScrollView.ValueChangedAction
     
-    func body(content: Content) -> some View {
+    public func body(content: Content) -> some View {
         content
             .introspectTableView { tableView in
                 tableView.onRefresh(onValueChanged)

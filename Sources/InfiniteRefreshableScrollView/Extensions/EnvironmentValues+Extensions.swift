@@ -6,7 +6,7 @@
 
 import SwiftUI
 
-extension EnvironmentValues {
+public extension EnvironmentValues {
     var refresh: RefreshAction? {
         get { self[RefreshActionKey.self] }
         set { self[RefreshActionKey.self] = newValue }

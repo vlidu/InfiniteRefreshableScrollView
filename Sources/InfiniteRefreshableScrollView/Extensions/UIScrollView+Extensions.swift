@@ -6,7 +6,7 @@
 
 import SwiftUI
 
-extension UIScrollView {
+public extension UIScrollView {
     private struct Keys {
         static var onValueChanged: UInt8 = 0
     }
