@@ -1,4 +1,4 @@
-# InfiniteRefreshableScrollView
+# RefreshableScrollView
 
 This package aims to improve the ScrollView on SwiftUI for iOS 14. `.refreshable` modifier comes
 from ios 15, so this package replaces it until you update your project minimal iOS version.
@@ -10,10 +10,14 @@ This package is largely inspired by [this article](http://blog.eppz.eu/swiftui-p
 ### Swift Package Manager
 
 ```swift
-https://github.com/vlidu/InfiniteRefreshableScrollView
+https://github.com/vlidu/RefreshableScrollView
 ```
 
 ## Usage
+
+### Refreshable
+You need to add the `.onRefresh` modifier to your `ScrollView` in order to use the Pull To Refresh
+feature.
 
 ```swift
 import SwiftUI
