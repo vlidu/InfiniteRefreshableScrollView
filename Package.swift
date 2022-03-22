@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "InfiniteRefreshableScrollView",
+    platforms: [
+        .iOS(.v14)
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -19,9 +22,9 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "InfiniteRefreshableScrollView",
-            dependencies: []),
-        .testTarget(
-            name: "InfiniteRefreshableScrollViewTests",
-            dependencies: ["InfiniteRefreshableScrollView"]),
+            dependencies: [
+                .product(name: "Introspect", package: "Introspect")
+            ],
+            path: "Sources"),
     ]
 )
